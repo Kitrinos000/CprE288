@@ -1,0 +1,20 @@
+/*
+ * lab2.c
+ *
+ *  Created on: Sep 12, 2024
+ *      Author: sg15
+ */
+#include "movment.c"
+#include "open_interface.h"
+
+void main() {
+    //stuff here later
+    //call the functions
+
+    oi_t *sensor = oi_alloc();
+
+    ///Initialize open interface
+    oi_init(sensor);
+
+    turn_clockwise(oi_t *sensor, 90);
+}

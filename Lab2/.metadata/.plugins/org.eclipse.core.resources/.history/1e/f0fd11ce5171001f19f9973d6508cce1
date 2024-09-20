@@ -1,0 +1,19 @@
+/*
+ * lab2.c
+ *
+ *  Created on: Sep 12, 2024
+ *      Author: sg15
+ */
+#include "movment.c"
+#include "open_interface.h"
+
+void main() {
+
+    ///Allocate and clear all memory for OI Struct
+    oi_t *sensor = oi_alloc();
+
+    ///Initialize open interface
+    oi_init(sensor_data);
+
+    turn_clockwise(oi_t *sensor, 90);
+}

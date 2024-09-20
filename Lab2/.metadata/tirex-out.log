@@ -1,0 +1,28 @@
+-----TI-REX started at Thu Sep 12 2024 12:30:20 GMT-0500 (Central Daylight Time)
+TIREX UNCAUGHT EXCEPTION
+date: Thu Sep 12 2024 12:30:22 GMT-0500 (Central Daylight Time)
+tirexVersion: 3.8.0+201911142334
+nodeVersion: v6.5.0
+nodePlatform: win32
+nodeArch: ia32
+tirexPluginVersion: 1.0.0.202307061549
+ccsVersion: 12.7.1.00001
+myHttpPort: 55432
+ccs_port: 51915
+stack: Error: EPERM: operation not permitted, mkdir 'c:\ti\zips'
+    at About to exit with code:  1
+.fs.mkdirSync (fs.js:922:18)
+    at Function.sync (C:\ti\ccs1271\ccs\tirex3\ti-rex-core\node_modules\multer\node_modules\mkdirp\index.js:71:13)
+    at new DiskStorage (C:\ti\ccs1271\ccs\tirex3\ti-rex-core\node_modules\multer\storage\disk.js:21:12)
+    at module.exports (C:\ti\ccs1271\ccs\tirex3\ti-rex-core\node_modules\multer\storage\disk.js:65:10)
+    at new Multer (C:\ti\ccs1271\ccs\tirex3\ti-rex-core\node_modules\multer\index.js:15:20)
+    at multer (C:\ti\ccs1271\ccs\tirex3\ti-rex-core\node_modules\multer\index.js:95:12)
+    at initApp (C:\ti\ccs1271\ccs\tirex3\ti-rex-core\app.js:310:31)
+    at async.series (C:\ti\ccs1271\ccs\tirex3\ti-rex-core\app.js:100:9)
+    at C:\ti\ccs1271\ccs\tirex3\ti-rex-core\node_modules\async\dist\async.js:3830:24
+message: EPERM: operation not permitted, mkdir 'c:\ti\zips'
+errno: -4048
+code: EPERM
+syscall: mkdir
+path: c:\ti\zips
+

@@ -1,0 +1,55 @@
+///*
+// * movment.c
+// *
+// *  Created on: Sep 12, 2024
+// *      Author: sg15
+// */
+
+//include the header file movment.h
+#include "movment.h"
+#include "open_interface.h"
+
+void move_forward(oi_t *sensor, int centimeter) {
+
+    //set the inital distance to 0
+    double distance = 0;
+
+    //move forward; full speed
+    oi_setWheels(500, 500);
+
+    //while the distance is less than the specified centimeters update
+     while (sum < (920/100) * centimeter) {
+         oi_update(sensor);
+         sum += sensor->distance;
+     }
+
+     //stop
+     oi_setWheels(0, 0);
+
+     oi_free(sensor);
+}
+
+
+//this function will turn the iRobot clockwise for a specified degree
+void turn_clockwise(oi_t *sensor, int degrees){
+
+    //set the angle to 0 degrees
+    double angle = 0;
+
+    //spin the iRobot at the center, spinning clockwise
+    oi_setWheels(-100, 100);
+
+    //while the angle is less than the degrees specified update the sensor
+    while(angle > -degrees){
+        oi_update(sensor);
+        angle += sensor->angle;
+   }
+
+   //once the condition is met stop the iRobot
+   oi_setWheels(0, 0); // stop
+
+   oi_free(sensor);
+
+}
+
+

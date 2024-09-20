@@ -1,0 +1,11 @@
+"./Timer.obj"
+"./iRobot.obj"
+"./lab2.obj"
+"./lcd.obj"
+"./movment.obj"
+"./open_interface.obj"
+"./tm4c1233h6pm_startup_ccs.obj"
+"../libcybotUART.lib"
+"../tm4c1233h6pm.cmd"
+-llibc.a
+-l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib"
